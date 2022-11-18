@@ -9,7 +9,7 @@ using namespace std;
 Дано натуральное число N.Выяснить, имеются ли среди чисел N, N + 1, … M близнецы, т.е.простые числа, разность между которыми равна двум.
 Определить функцию, позволяющую распознать простые числа.Замечание.Использовать механизм формальных параметров.*/
 int bliznecy(int n)
-{
+{ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
     if (n == 1 || n == 0)
         return 0;
     for (int i = 2; i <= sqrt((double)n); i++)
