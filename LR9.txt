@@ -1,0 +1,72 @@
+#include <iostream>
+#include <windows.h>
+#include <string>
+using namespace std;
+
+/* Программа должна предоставить пользователю выбор на: 1) создание файла,
+2) на просмотр структур из файла, 3) на добавление структур в файл,
+4) на просмотр решения задачи и 5) выход из программы.
+Указанные выше действия оформить в виде подпрограммы.
+
+9.3. При поступлении на музыкально-педагогический факультет на абитуриентов собираются сведения фамилия, музыкальный инструмент.
+Для поступления необходимо сдать экзамен по специальности. Составьте списки фамилий для данного экзамена, в зависимости от специальности (инструмента).
+Список фамилий упорядочить.
+*/
+struct abi
+{
+    string fam;
+    string instr;
+    int num;
+
+};
+
+struct ekz
+{
+    string Специальность;
+};
+int main()
+{
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+
+    char q;
+    abi kolvo, famabi, instrabi;
+    cout << "Количество абитуриентов " << endl;
+    while ((!(cin >> kolvo.num)) || (kolvo.num <= 0))
+    {
+        cin.clear();
+        while (cin.get() != '\n');
+    }
+
+    cout << " Введите фамилии " << kolvo.num << " абитуриентов" << endl;
+    for (int i = 0; i < kolvo.num; i++)
+    {
+        do
+        {
+            cout << " Фамилия " << i + 1 << " абитуриента" << endl;
+            cin >> famabi.fam;
+            cout << " Инструмент " << i + 1 << " абитуриента" << endl;
+            cin >> instrabi.instr;
+        } while (famabi.fam.empty());
+       
+    }
+    cout << " Вывести таблицу абитуриентов? " << endl;
+    do
+    {
+        cout << "y/n?" << endl;
+        cin >> q;
+    } while (q != 'y' && q != 'n');
+   
+    if (q == 'y')
+    {
+        for (int i = 0; i < kolvo.num; i++)
+        {
+            cout << i + 1 << " абитуриен " << famabi.fam << endl;
+            cout << "Инструмент " << i + 1 << " абитуриента " << instrabi.instr << endl;
+        }
+
+    }
+   
+        
+
+}
