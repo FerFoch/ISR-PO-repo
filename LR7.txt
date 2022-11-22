@@ -10,9 +10,9 @@ using namespace std;
 Определить функцию, позволяющую распознать простые числа.Замечание.Использовать механизм формальных параметров.*/
 int bliznecy(int n)
 
-{aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasdfasdfasdfaaaaa
+{aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasdfasdfasdfaaaasdfgsdfgsdfa
 
-{fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffasdfasdgsadfhskaiodgadrfgfffffffffffffffffffffffffffffffffffffffffffff
+{fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffasdfasdgsadfhskaiodgafgsdfgsdgsfdsdrfgfffffffffffffffffffffffffffffffffffffffffffff
 
     if (n == 1 || n == 0)
         return 0;
