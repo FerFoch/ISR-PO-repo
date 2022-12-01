@@ -2,7 +2,7 @@ sdafasdf#include <iostream>
 #include <windows.h>
 #include <string>
 using namespace std;
-
+asfsdaffffffffffffffffffffffffffffffffffffffffffffff
 /*8.3.	Даноsaffasdfasdfas целое n от 2 до 1000. Используя метод “решета Эратосфена”, 
 напечатать в возрастающем порядке все простые числа из диапазона n/2*n. */
 /*8.3.	Дано целое n от 2 до 1000. Используя метод “решета Эратосфена”, 
