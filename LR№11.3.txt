@@ -1,0 +1,56 @@
+#include <iostream>
+#include <cmath>
+#include <windows.h>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+
+    int a1;
+    int a2;
+    string a;
+    string b;
+    string space = " ";
+    string security = "0123456789";
+
+    do
+    {
+        cout << "Введите первое число: " << endl;
+        getline(cin, a);
+    } while (a.empty() or a.size() != strspn(a.c_str(), security.c_str()) or a.size() == strspn(a.c_str(), space.c_str()));
+    a1 = atoi(a.c_str());
+    do
+    {
+        cout << "Введите второе число: " << endl;
+        getline(cin, b);
+    } while (b.empty() or b.size() == strspn(b.c_str(), space.c_str()) or b.size() != strspn(b.c_str(), security.c_str()));
+    a2 = atoi(b.c_str());
+
+
+    if (a1 > a2)
+    {
+        int tmp = a2;
+        a2 = a1;
+        a1 = tmp;
+    }
+
+    cout << "Пифагоровы тройки чисел от " << a1 << " до " << a2 << " включительно:" << endl;
+    for (int i = a1; i <= a2; i++)
+    {
+        for (int j = a1; j <= a2; j++)
+        {
+            for (int k = a1; k <= a2; k++)
+            {
+                if (i * i + j * j == k * k)
+                    cout << "{ " << i << ";" << j << ";" << k << "}" << endl;
+            }
+        }
+    }
+
+    return 0;
+}
+
